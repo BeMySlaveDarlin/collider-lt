@@ -1,4 +1,4 @@
-# Нагрузочное тестирование Collider с k6 (ОБНОВЛЕНО)
+# Нагрузочное тестирование Collider с k6
 
 ## 🔄 Ключевые изменения
 
@@ -40,7 +40,7 @@ k6-tests/
 └── monitor-resources.sh     # Мониторинг ресурсов
 ```
 
-## 🔍 API которые тестируем (ОБНОВЛЕНО)
+## 🔍 API которые тестируем
 
 ### 📝 **POST /event** - Создание события
 ```json
@@ -82,7 +82,7 @@ DELETE /events?before=2025-01-01T00:00:00Z
 
 ## Быстрый старт
 
-### 1. Установка k6 (без изменений)
+### 1. Установка k6
 ```bash
 sudo gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
 echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
@@ -109,7 +109,7 @@ cd ~/k6-tests
 ./run-all-tests.sh http://localhost
 ```
 
-## Тестовые сценарии (ОБНОВЛЕНО)
+## Тестовые сценарии
 
 ### 1. Load test: Create (RPS)
 ```bash
